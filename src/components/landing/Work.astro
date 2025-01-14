@@ -1,0 +1,37 @@
+<section class="border-b border-white/20 bg-accent-500">
+  <div
+    class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12 gradient-grid"
+  >
+    <div class="mx-auto">
+      <h3 class="text-3xl font-display text-white uppercase">
+        sooo what is a "webring"? 🤔
+      </h3>
+    </div>
+  </div>
+</section>
+<section class="border-b border-white/20 bg-accent-500">
+  <div
+    class="mx-auto max-w-7xl border-white/20 border-x"
+    x-data="{ init() {
+            new Splide(this.$refs.splide, {
+
+                perPage: 5,
+                gap: '0rem',
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                    },
+                },
+
+            }).mount()
+        },
+    }"
+  >
+    <p class="p-8 text-white">
+      A webring is like an old-school internet friendgroup, a circle of websites
+      linked together, usually around a shared theme. Popular in the ‘90s and
+      early 2000s. All a webring means for you, is that you have a link to the
+      previous and next site in the ring.
+    </p>
+  </div>
+</section>
